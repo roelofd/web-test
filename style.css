@@ -5,7 +5,8 @@
 }
 
 body {
-    background-color: antiquewhite;
+    width: 100%;
+    background-color: whitesmoke;
 }
 
 .header {   /* Header balk style */
@@ -24,55 +25,22 @@ body {
     float: left;
 }
 
-.menu_part {    /* Voor de container die alle knoppen heeft */
-    height: 110px;
-    width: 800px;
-    float: left;
-    margin-left: 110px;
-}
 
 .main_body {    /* Voor de main text op de hoofdpagina */
     height: 800px;
-    width: 950px;
-    /*background-color: magenta;*/
+    width: 50%;
+    background-color: magenta;
     padding: 25px;
     padding-bottom: 30px;
     margin: 0 auto;
     position: center;
-    margin-top: 30px;
-    border-top: solid black 3px;
+    margin-top: 2%;
+    border-top: solid #2a2729 3px;
     border-radius: 5px;
-
-}
-
-
-li {
-    display: inline;
-    float: left;
-    border-left: solid #18181A 1px;
-}
-
-ul {
-    list-style-type: none;
-    margin: 0;
-    padding: 0;
-    overflow: hidden;
-}
-
-li a {
-    display: block;
-    color: white;
-    text-align: center;
-    padding: 45px 50px;
-    text-decoration: none;
-}
-
-li a:hover {    /* Hover effect van de knoppen */
-    transition: background-color 0.3s, height 4s;
-    background-color: #111;
 }
 
 .logo {         /* Logo eigenschappen */
+    float: left;
     height: 120px;
     margin-left: 40px;
 }
@@ -87,3 +55,39 @@ li a:hover {    /* Hover effect van de knoppen */
     position: relative;
 }
 
+/* PRESETS */
+
+.column1 {  /* Overdwars text */
+
+}
+
+.column2 {  /* Links text */
+
+}
+
+.column3 {  /* Rechts text */
+
+}
+
+/* Use a media query to add a break point at 800px: */
+@media screen and (max-width: 900px) {
+
+    .header, .container_logo, .menu_part {
+        max-width: 100%;
+        width: 100%;
+    }
+
+    .main_body {
+        width: 80%;
+    }
+
+    .logo {
+        float: left;
+    }
+
+    li {
+        width:100%; /* The width is 100%, when the viewport is 800px or smaller */
+        background-color: #2a2729;
+    }
+
+}

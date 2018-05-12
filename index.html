@@ -2,25 +2,53 @@
 <html lang="en">
 <head>
     <meta name="viewport" content="width=device-width, initial-scale=1.0" charset="UTF-8">
-    <title>Title</title>
+    <title>Studio BoerVos</title>
     <link rel="stylesheet" type="text/css" href="style.css">
+    <script src="cycle.js"></script>
 </head>
 <body>
-    <div class="background_picture">                        <!-- Is voor de foto op de hoofdpagina. De header zit daar in principe in -->
-        <div class="header">
-                <a href="index.html">
-                    <img class="logo" src="images/logo4.png" alt="VanHellen">   <!-- Logo -->
-                </a>
-            </div>
+    <div class="header">
+        <a href="index.html">
+            <img class="logo" src="images/logo4.png" alt="VanHellen">   <!-- Logo -->
+        </a>
+    </div>
 
 
-        </div>
+    <div class="background_picture parallax">                        <!-- Is voor de foto op de hoofdpagina. De header zit daar in principe in -->
+
     </div>
 
 
     <div class="main_body">                                 <!-- Is de main box van alle text op de homepagina -->
         <div class="top-stripe"></div>
+        <div class="column1">
+            <h1>Welkom!</h1>
+            <p>Dit is even een test tekstje waar waarscijinlijk fouten in zitten maar dat maakt niet uit
+                Dit is even een test tekstje waar waarscijinlijk fouten in zitten maar dat maakt niet uit
+                Dit is even een test tekstje waar waarscijinlijk fouten in zitten maar dat maakt niet uit
+                Dit is even een test tekstje waar waarscijinlijk fouten in zitten maar dat maakt niet uit
+                Dit is even een test tekstje waar waarscijinlijk fouten in zitten maar dat maakt niet uit </p>
 
+            <p>Dit is even een test tekstje waar waarscijinlijk fouten in zitten maar dat maakt niet uit
+                Dit is even een test tekstje waar waarscijinlijk fouten in zitten maar dat maakt niet uit </p>
+        </div>
+
+        <div class="column2">
+            <h2>Wie ben ik?</h2>
+            <p>Wahtsafuck</p>
+            <p>Hmmm weet kniet hoor ik wil nu naar huus</p>
+        </div>
+
+        <div class="column3">
+            <h2>Schilderijen</h2>
+            <p>Dit moet even random tekst voorstellen</p>
+        </div>
     </div>
 </body>
 </html>
+
+<script>
+    $('#background_picture').cycle({
+    fx: 'scrollDown'
+});
+</script>
